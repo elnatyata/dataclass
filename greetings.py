@@ -16,7 +16,10 @@ class Student:
 
     def enroll(self, classroom):
         self.classroom = classroom
-        return f"{self.first_name} {self.last_name} joins {classroom}."
+        return f"{self.first_name} {self.last_name} joins {classroom}.
+          def farewell(self):
+        return f"See you soon, {self.first_name}!
+        "
 
 
 if __name__ == "__main__":
