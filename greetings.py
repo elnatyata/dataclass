@@ -29,9 +29,9 @@ if __name__ == "__main__":
         return f"See you soon, {self.first_name}!"
         
         return f"{self.first_name} {self.last_name} joins {classroom}.
-          def farewell(self):
-        return f"See you soon, {self.first_name}!
-        "
+          
+     def farewell(self):
+        return f"See you soon, {self.first_name}!"
 
 
 if __name__ == "__main__":
