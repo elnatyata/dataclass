@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-print("Hello Maïane!")
-=======
 class Student:
     def __init__(self, first_name, last_name, email):
         self.first_name = first_name
@@ -19,10 +16,7 @@ class Student:
 
     def enroll(self, classroom):
         self.classroom = classroom
-        return f"{self.first_name} {self.last_name} joins {classroom}.
-          def farewell(self):
-        return f"See you soon, {self.first_name}!
-        "
+        return f"{self.first_name} {self.last_name} joins {classroom}."
 
 
 if __name__ == "__main__":
@@ -33,4 +27,3 @@ if __name__ == "__main__":
     print(f"Registered as student #{student.student_id}")
     print(f"Confirmation sent to {student.email}")
     print(student.enroll("MSc 1 Data"))
->>>>>>> b1247d669b7bea8f8356a3caf296de1bab6db2ce
