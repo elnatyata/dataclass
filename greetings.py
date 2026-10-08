@@ -16,6 +16,7 @@ class Student:
 
     def enroll(self, classroom):
         self.classroom = classroom
+        
 if __name__ == "__main__":
     registry = []
     student = Student("Tuka", "Bade", "tuka@albertschool.com")
@@ -30,7 +31,7 @@ if __name__ == "__main__":
         
         return f"{self.first_name} {self.last_name} joins {classroom}.
           
-     def farewell(self):
+    def farewell(self):
         return f"See you soon, {self.first_name}!"
 
 
