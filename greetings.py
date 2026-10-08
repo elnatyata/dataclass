@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-print("Hello Maïane!")
-=======
 class Student:
     def __init__(self, first_name, last_name, email):
         self.first_name = first_name
@@ -9,6 +6,9 @@ class Student:
         self.student_id = None
         self.classroom = None
 
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"
+
     def welcome(self):
         return f"Welcome to Albert School, {self.first_name}!"
 
@@ -16,14 +16,16 @@ class Student:
         self.student_id = len(registry) + 1
         registry.append(self)
         return self.student_id
+    
+    def is_enrolled(self):
+        return self.classroom is not None
 
     def enroll(self, classroom):
         self.classroom = classroom
-        return f"{self.first_name} {self.last_name} joins {classroom}.
-          def farewell(self):
-        return f"See you soon, {self.first_name}!
-        "
-
+        return f"{self.full_name()} joins {classroom}."
+    
+    def farewell(self):
+        return f"See you soon, {self.first_name}!"
 
 if __name__ == "__main__":
     registry = []
@@ -33,4 +35,5 @@ if __name__ == "__main__":
     print(f"Registered as student #{student.student_id}")
     print(f"Confirmation sent to {student.email}")
     print(student.enroll("MSc 1 Data"))
->>>>>>> b1247d669b7bea8f8356a3caf296de1bab6db2ce
+
+    print(student.farewell())
