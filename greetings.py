@@ -16,6 +16,18 @@ class Student:
 
     def enroll(self, classroom):
         self.classroom = classroom
+if __name__ == "__main__":
+    registry = []
+    student = Student("Tuka", "Bade", "tuka@albertschool.com")
+    student.register(registry)
+    print(student.welcome())
+    print(f"Registered as student #{student.student_id}")
+    print(f"Confirmation sent to {student.email}")
+    print(student.enroll("MSc 1 Data"))    
+    
+    def farewell(self):
+        return f"See you soon, {self.first_name}!"
+        
         return f"{self.first_name} {self.last_name} joins {classroom}.
           def farewell(self):
         return f"See you soon, {self.first_name}!
